@@ -6,9 +6,12 @@ from odoo import models, fields
 
 
 class ProductUom(models.Model):
-    _inherit = 'product.uom'
+    _inherit = 'uom.uom'
 
     unece_code = fields.Char(
         string='UNECE Code',
         help="Standard nomenclature of the United Nations Economic "
         "Commission for Europe (UNECE).")
+
+
+
